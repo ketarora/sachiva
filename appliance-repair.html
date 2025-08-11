@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="keywords" content="Appliance Repair, AC Repair, Washing Machine, Refrigerator, Sachiva" />
-  <meta name="description" content="Professional appliance repair services for all major home appliances." />
+  <meta name="description" content="Expert repair services for all major home appliances. AC, washing machine, refrigerator, and more." />
   <meta name="author" content="Sachiva Team" />
   
   <link rel="icon" href="./images/logo_blue.png">
@@ -24,7 +24,7 @@
 
   <style>
     .service-hero {
-      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
       color: white;
       padding: 120px 0 80px;
       margin-top: 78px;
@@ -125,7 +125,7 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+      background: linear-gradient(135deg, #667eea, #764ba2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -157,14 +157,14 @@
       background: #1a1a1a;
     }
     
-    .appliance-grid {
+    .feature-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       margin: 40px 0;
     }
     
-    .appliance-card {
+    .feature-card {
       background: white;
       padding: 30px;
       border-radius: 15px;
@@ -173,19 +173,19 @@
       transition: transform 0.3s ease;
     }
     
-    .appliance-card:hover {
+    .feature-card:hover {
       transform: translateY(-5px);
     }
     
-    [data-theme="dark"] .appliance-card {
+    [data-theme="dark"] .feature-card {
       background: #2c2c2c;
       color: white;
     }
     
-    .appliance-icon {
+    .feature-icon {
       width: 80px;
       height: 80px;
-      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -196,8 +196,8 @@
     }
     
     .pricing-section {
-      background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-      color: #333;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
       padding: 60px 0;
     }
     
@@ -213,7 +213,7 @@
     .price {
       font-size: 2.5rem;
       font-weight: bold;
-      color: #ff6b9d;
+      color: #f5576c;
       margin: 20px 0;
     }
     
@@ -246,7 +246,7 @@
     
     .work-image {
       height: 200px;
-      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -309,7 +309,7 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #ff9a9e, #fecfef);
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -349,7 +349,7 @@
         text-align: center;
       }
       
-      .appliance-grid,
+      .feature-grid,
       .gallery-grid {
         grid-template-columns: 1fr;
       }
@@ -402,16 +402,16 @@
       <div class="row align-items-center">
         <div class="col-lg-8">
           <h1><i class="fas fa-tools"></i> Appliance Repair Services</h1>
-          <p>Expert repair services for all major home appliances including AC, washing machines, refrigerators, and more.</p>
+          <p>Expert repair for AC, washing machines, refrigerators, microwaves, and all major home appliances.</p>
           <div class="service-badges">
-            <span class="badge-item">All Major Brands</span>
+            <span class="badge-item">All Brands Repaired</span>
             <span class="badge-item">Certified Technicians</span>
-            <span class="badge-item">6 Month Warranty</span>
-            <span class="badge-item">Same Day Service</span>
+            <span class="badge-item">90-Day Warranty</span>
+            <span class="badge-item">Quick Diagnosis</span>
           </div>
         </div>
         <div class="col-lg-4 text-center">
-          <i class="fas fa-cogs" style="font-size: 8rem; opacity: 0.3;"></i>
+          <i class="fas fa-blender-phone" style="font-size: 8rem; opacity: 0.3;"></i>
         </div>
       </div>
     </div>
@@ -420,7 +420,7 @@
   <!-- Availability Checker -->
   <section class="container">
     <div class="availability-checker">
-      <h3><i class="fas fa-search"></i> Check Repair Service Availability</h3>
+      <h3><i class="fas fa-map-marker-alt"></i> Check Service Availability</h3>
       <form id="availabilityForm">
         <div class="row">
           <div class="col-md-4">
@@ -440,63 +440,47 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div class="form-group-custom">
-              <select class="form-control-custom" id="applianceType" required>
-                <option value="">Select Appliance Type</option>
-                <option value="ac">Air Conditioner</option>
-                <option value="washing-machine">Washing Machine</option>
-                <option value="refrigerator">Refrigerator</option>
-                <option value="microwave">Microwave</option>
-                <option value="dishwasher">Dishwasher</option>
-                <option value="water-heater">Water Heater</option>
+              <select class="form-control-custom" id="issueType" required>
+                <option value="">-- Select Appliance Issue --</option>
+                <option value="ac">AC Not Cooling</option>
+                <option value="washing_machine">Washing Machine Not Working</option>
+                <option value="refrigerator">Refrigerator Issue</option>
+                <option value="microwave">Microwave Not Heating</option>
                 <option value="other">Other</option>
               </select>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group-custom">
-              <input type="text" class="form-control-custom" id="applianceBrand" placeholder="Brand (e.g., LG, Samsung)" required>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group-custom">
-              <textarea class="form-control-custom" id="issueDescription" rows="3" placeholder="Describe the problem with your appliance" required></textarea>
-            </div>
-          </div>
         </div>
         <button type="submit" class="btn-check-availability">
-          <i class="fas fa-search"></i> Find Repair Technician & Get Quote
+          <i class="fas fa-search"></i> Check Availability & Get Quote
         </button>
       </form>
       
       <div id="contractorResult" class="contractor-result">
         <div class="contractor-card">
-          <div class="contractor-avatar" id="contractorAvatar">MK</div>
+          <div class="contractor-avatar" id="contractorAvatar">SK</div>
           <div class="contractor-info">
-            <h4 id="contractorName">Manoj Kumar</h4>
-            <p><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i> 4.9 (89 reviews)</p>
-            <p><i class="fas fa-phone"></i> <span id="contractorPhone">+91 98765-43220</span></p>
-            <p><i class="fas fa-clock"></i> Expected Time: <span id="expectedTime">1-3 hours</span></p>
-            <p><i class="fas fa-certificate"></i> Specializes in: <span id="specialization">AC & Refrigerator Repair</span></p>
+            <h4 id="contractorName">Sanjay Kumar</h4>
+            <p><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i class="fas fa-star-half-alt rating"></i> 4.9 (150 reviews)</p>
+            <p><i class="fas fa-phone"></i> <span id="contractorPhone">+91 98765-11111</span></p>
+            <p><i class="fas fa-clock"></i> Expected Time: <span id="expectedTime">1-2 hours</span></p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
             <h5><i class="fas fa-rupee-sign"></i> Estimated Cost</h5>
-            <p class="price" id="estimatedCost">₹500 - ₹1,200</p>
-            <small>*Includes diagnosis + basic repair</small>
+            <p class="price" id="estimatedCost">₹300 - ₹1,000</p>
           </div>
           <div class="col-md-6">
             <h5><i class="fas fa-calendar"></i> Available Slots</h5>
-            <p><strong>Today:</strong> 11:00 AM, 3:00 PM</p>
-            <p><strong>Tomorrow:</strong> 9:00 AM, 1:00 PM, 5:00 PM</p>
+            <p><strong>Today:</strong> 3:00 PM, 5:00 PM</p>
+            <p><strong>Tomorrow:</strong> 11:00 AM, 3:00 PM</p>
           </div>
         </div>
         <button class="btn-check-availability" onclick="bookService()">
-          <i class="fas fa-calendar-check"></i> Book Repair Service
+          <i class="fas fa-calendar-check"></i> Book Now
         </button>
       </div>
     </div>
@@ -506,57 +490,41 @@
   <section class="service-details">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>Appliances We Repair</h2>
-        <p>Professional repair services for all major home appliances</p>
+        <h2>What We Repair</h2>
+        <p>Expert repair services for all your major home appliances</p>
       </div>
       
-      <div class="appliance-grid">
-        <div class="appliance-card">
-          <div class="appliance-icon">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
             <i class="fas fa-snowflake"></i>
           </div>
           <h4>Air Conditioners</h4>
-          <p>AC repair, gas refilling, compressor issues, and maintenance for all brands.</p>
+          <p>AC repair, servicing, gas refilling, and installation for all brands.</p>
         </div>
         
-        <div class="appliance-card">
-          <div class="appliance-icon">
-            <i class="fas fa-tshirt"></i>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tint"></i>
           </div>
           <h4>Washing Machines</h4>
-          <p>Drum repair, motor issues, water leakage, and spin problems for all models.</p>
+          <p>Repair for top load, front load, and semi-automatic washing machines.</p>
         </div>
         
-        <div class="appliance-card">
-          <div class="appliance-icon">
-            <i class="fas fa-cube"></i>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-door-closed"></i>
           </div>
           <h4>Refrigerators</h4>
-          <p>Cooling issues, compressor repair, ice maker problems, and temperature control.</p>
+          <p>Fridge repair, gas filling, and servicing for all models.</p>
         </div>
         
-        <div class="appliance-card">
-          <div class="appliance-icon">
-            <i class="fas fa-microchip"></i>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-check-circle"></i>
           </div>
-          <h4>Microwaves</h4>
-          <p>Heating issues, turntable problems, door repair, and control panel fixes.</p>
-        </div>
-        
-        <div class="appliance-card">
-          <div class="appliance-icon">
-            <i class="fas fa-utensils"></i>
-          </div>
-          <h4>Dishwashers</h4>
-          <p>Water drainage, spray arm issues, door seal repair, and cleaning cycles.</p>
-        </div>
-        
-        <div class="appliance-card">
-          <div class="appliance-icon">
-            <i class="fas fa-fire"></i>
-          </div>
-          <h4>Water Heaters</h4>
-          <p>Heating element replacement, thermostat repair, and tank maintenance.</p>
+          <h4>All Major Brands</h4>
+          <p>We service and repair appliances from LG, Samsung, Whirlpool, and more.</p>
         </div>
       </div>
     </div>
@@ -566,20 +534,20 @@
   <section class="pricing-section">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>Repair Service Pricing</h2>
-        <p>Transparent pricing with no hidden charges</p>
+        <h2 style="color: white;">Transparent Pricing</h2>
+        <p style="color: rgba(255,255,255,0.9);">No hidden charges, upfront pricing for all services</p>
       </div>
       
       <div class="row">
         <div class="col-md-4">
           <div class="pricing-card">
-            <h4>Diagnosis & Minor Repair</h4>
+            <h4>Inspection</h4>
             <div class="price">₹300</div>
             <ul style="text-align: left; padding-left: 20px;">
-              <li>Problem diagnosis</li>
-              <li>Minor component repair</li>
-              <li>Basic maintenance</li>
-              <li>1 month warranty</li>
+              <li>Appliance diagnosis</li>
+              <li>Problem identification</li>
+              <li>Quote for repair</li>
+              <li>Fee adjusted in final bill</li>
             </ul>
           </div>
         </div>
@@ -589,23 +557,23 @@
             <h4>Standard Repair</h4>
             <div class="price">₹800</div>
             <ul style="text-align: left; padding-left: 20px;">
-              <li>Component replacement</li>
-              <li>Major repairs</li>
-              <li>Performance optimization</li>
-              <li>3 months warranty</li>
+              <li>Common part replacement</li>
+              <li>Servicing and cleaning</li>
+              <li>1-2 hours service</li>
+              <li>30-day warranty</li>
             </ul>
           </div>
         </div>
         
         <div class="col-md-4">
           <div class="pricing-card">
-            <h4>Complete Overhaul</h4>
-            <div class="price">₹1,500</div>
+            <h4>Major Repair</h4>
+            <div class="price">₹2,000</div>
             <ul style="text-align: left; padding-left: 20px;">
-              <li>Complete appliance service</li>
-              <li>Multiple part replacement</li>
-              <li>Deep cleaning & maintenance</li>
-              <li>6 months warranty</li>
+              <li>Motor or compressor work</li>
+              <li>Gas refilling</li>
+              <li>Complex repairs</li>
+              <li>90-day warranty</li>
             </ul>
           </div>
         </div>
@@ -617,8 +585,8 @@
   <section class="work-gallery">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>Our Repair Work</h2>
-        <p>See our professional appliance repair services in action</p>
+        <h2>Our Previous Work</h2>
+        <p>See the quality of our appliance repair services</p>
       </div>
       
       <div class="gallery-grid">
@@ -627,31 +595,31 @@
             <i class="fas fa-snowflake"></i>
           </div>
           <div class="work-content">
-            <h4>AC Compressor Repair</h4>
-            <p class="work-meta">Gwalior - Completed in 2 hours</p>
-            <p>Complete AC compressor replacement and gas refilling for Samsung 1.5 ton AC.</p>
+            <h4>AC Compressor Replacement</h4>
+            <p class="work-meta">Gwalior - Completed in 3 hours</p>
+            <p>Replaced a faulty compressor in a split AC unit, restoring cooling.</p>
           </div>
         </div>
         
         <div class="work-card">
           <div class="work-image">
-            <i class="fas fa-tshirt"></i>
+            <i class="fas fa-tint"></i>
           </div>
           <div class="work-content">
-            <h4>Washing Machine Motor Fix</h4>
-            <p class="work-meta">Indore - Completed in 1.5 hours</p>
-            <p>Motor replacement and drum alignment for LG front-load washing machine.</p>
+            <h4>Washing Machine Drum Repair</h4>
+            <p class="work-meta">Indore - Completed in 2 hours</p>
+            <p>Fixed a noisy drum issue in a front-load washing machine.</p>
           </div>
         </div>
         
         <div class="work-card">
           <div class="work-image">
-            <i class="fas fa-cube"></i>
+            <i class="fas fa-door-closed"></i>
           </div>
           <div class="work-content">
-            <h4>Refrigerator Cooling Issue</h4>
-            <p class="work-meta">Bhopal - Completed in 3 hours</p>
-            <p>Compressor repair and thermostat replacement for Whirlpool double-door refrigerator.</p>
+            <h4>Refrigerator Gas Refill</h4>
+            <p class="work-meta">Bhopal - Completed in 1 hour</p>
+            <p>Refilled gas in a double-door refrigerator to solve cooling problems.</p>
           </div>
         </div>
       </div>
@@ -670,32 +638,32 @@
         <div class="col-md-6">
           <div class="review-card">
             <div class="review-header">
-              <div class="review-avatar">SK</div>
+              <div class="review-avatar">VK</div>
               <div>
-                <h5>Suresh Kumar</h5>
+                <h5>Vikas Kumar</h5>
                 <div class="rating">
                   <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
                 <small>Gwalior</small>
               </div>
             </div>
-            <p>"Amazing service! My AC was not cooling properly and they fixed it within 2 hours. Very professional technician."</p>
+            <p>"My AC was not cooling. The technician arrived on time, diagnosed the issue quickly, and fixed it. Very happy with the service."</p>
           </div>
         </div>
         
         <div class="col-md-6">
           <div class="review-card">
             <div class="review-header">
-              <div class="review-avatar">AS</div>
+              <div class="review-avatar">SM</div>
               <div>
-                <h5>Anita Sharma</h5>
+                <h5>Sunita Mehta</h5>
                 <div class="rating">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                 </div>
                 <small>Indore</small>
               </div>
             </div>
-            <p>"My washing machine was making noise and not spinning. They replaced the motor and now it works perfectly!"</p>
+            <p>"My washing machine stopped working. They sent a technician the same day who repaired it. Professional and efficient."</p>
           </div>
         </div>
       </div>
@@ -742,7 +710,6 @@
                     <li><a href="appliance-repair.html">Appliance Repair</a></li>
                     <li><a href="cleaning-services.html">Cleaning Services</a></li>
                     <li><a href="it-network-setup.html">IT & Network Setup</a></li>
-                    <li><a href="security-systems.html">Security Systems</a></li>
                 </ul>
             </div>
 
@@ -784,57 +751,34 @@
   <script>
     document.getElementById("displayDateYear").textContent = new Date().getFullYear();
     
-    // Appliance repair contractor database by pincode
+    // Contractor database by pincode
     const contractorDatabase = {
       '474001': { // Gwalior
-        name: 'Manoj Kumar',
-        avatar: 'MK',
-        phone: '+91 98765-43220',
+        name: 'Sanjay Kumar',
+        avatar: 'SK',
+        phone: '+91 98765-11111',
         rating: '4.9',
-        reviews: '89',
-        expectedTime: '1-3 hours',
-        cost: '₹500 - ₹1,200',
-        specialization: 'AC & Refrigerator Repair'
+        reviews: '150',
+        expectedTime: '1-2 hours',
+        cost: '₹300 - ₹1,000'
       },
       '452001': { // Indore
-        name: 'Deepak Singh',
-        avatar: 'DS',
-        phone: '+91 98765-43221',
+        name: 'Deepak Verma',
+        avatar: 'DV',
+        phone: '+91 98765-22222',
         rating: '4.8',
-        reviews: '156',
-        expectedTime: '2-4 hours',
-        cost: '₹400 - ₹1,000',
-        specialization: 'Washing Machine & Microwave'
+        reviews: '120',
+        expectedTime: '1-3 hours',
+        cost: '₹400 - ₹1,200'
       },
       '462001': { // Bhopal
-        name: 'Ravi Patel',
-        avatar: 'RP',
-        phone: '+91 98765-43222',
+        name: 'Manoj Singh',
+        avatar: 'MS',
+        phone: '+91 98765-33333',
         rating: '4.7',
-        reviews: '203',
-        expectedTime: '1-2 hours',
-        cost: '₹600 - ₹1,500',
-        specialization: 'All Appliances'
-      },
-      '110001': { // Delhi
-        name: 'Arjun Sharma',
-        avatar: 'AS',
-        phone: '+91 98765-43223',
-        rating: '4.9',
-        reviews: '278',
-        expectedTime: '1-3 hours',
-        cost: '₹800 - ₹2,000',
-        specialization: 'Premium Appliances'
-      },
-      '400001': { // Mumbai
-        name: 'Kiran Mehta',
-        avatar: 'KM',
-        phone: '+91 98765-43224',
-        rating: '4.8',
-        reviews: '189',
+        reviews: '180',
         expectedTime: '2-4 hours',
-        cost: '₹1,000 - ₹2,500',
-        specialization: 'High-end Appliances'
+        cost: '₹350 - ₹1,100'
       }
     };
     
@@ -844,9 +788,7 @@
       const pincode = document.getElementById('pincode').value;
       const name = document.getElementById('customerName').value;
       const address = document.getElementById('customerAddress').value;
-      const applianceType = document.getElementById('applianceType').value;
-      const brand = document.getElementById('applianceBrand').value;
-      const issue = document.getElementById('issueDescription').value;
+      const issue = document.getElementById('issueType').value;
       
       if (pincode.length !== 6) {
         alert('Please enter a valid 6-digit PIN code');
@@ -863,22 +805,20 @@
         document.getElementById('contractorPhone').textContent = contractor.phone;
         document.getElementById('expectedTime').textContent = contractor.expectedTime;
         document.getElementById('estimatedCost').textContent = contractor.cost;
-        document.getElementById('specialization').textContent = contractor.specialization;
         
         // Show result
         resultDiv.style.display = 'block';
         resultDiv.scrollIntoView({ behavior: 'smooth' });
       } else {
-        alert('Sorry, we currently don\'t have appliance repair technicians available in your area. We\'ll expand to your location soon!');
+        alert('Sorry, we currently don\'t have contractors available in your area. We\'ll expand to your location soon!');
       }
     });
     
     function bookService() {
       const name = document.getElementById('customerName').value;
-      const applianceType = document.getElementById('applianceType').value;
-      const brand = document.getElementById('applianceBrand').value;
       const phone = document.getElementById('contractorPhone').textContent;
-      const message = `Hi! I need appliance repair service. My name is ${name}. Appliance: ${applianceType} (${brand}). Please confirm the appointment.`;
+      const issue = document.getElementById('issueType').selectedOptions[0].text;
+      const message = `Hi! I would like to book an appliance repair service for the following issue: ${issue}. My name is ${name}. Please confirm the appointment.`;
       const whatsappUrl = `https://wa.me/${phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
     }

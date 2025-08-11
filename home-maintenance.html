@@ -442,7 +442,14 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group-custom">
-              <textarea class="form-control-custom" id="issueDescription" rows="3" placeholder="Describe the issue/work needed" required></textarea>
+              <select class="form-control-custom" id="issueType" required>
+                <option value="">-- Select Problem Type --</option>
+                <option value="plumbing">Leaky Faucet or Pipe</option>
+                <option value="electrical">Broken Switch or Outlet</option>
+                <option value="installation">Fan or Light Installation</option>
+                <option value="general">General Checkup</option>
+                <option value="other">Other</option>
+              </select>
             </div>
           </div>
         </div>
@@ -703,7 +710,6 @@
                     <li><a href="appliance-repair.html">Appliance Repair</a></li>
                     <li><a href="cleaning-services.html">Cleaning Services</a></li>
                     <li><a href="it-network-setup.html">IT & Network Setup</a></li>
-                    <li><a href="security-systems.html">Security Systems</a></li>
                 </ul>
             </div>
 
